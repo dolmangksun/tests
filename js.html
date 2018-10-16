@@ -6,13 +6,14 @@
   <body>
     Your password : <input type="text" id="PS">
     <button onclick="MyFunction()">SubmIt</button>
-    <p id="p1">Write the right password to log in!</p><br>
+    <p id="p1"></p>
     <a href="https://www.google.com" id="p2"></p>
     <script>
       function MyFunction() {
         var x = document.getElementById("PS").value;
         if (x=="1234a") {
           document.getElementById("p2").innerHTML="loged in";
+          document.getElementById("p1").innerHTML="";
         } 
        else {
           document.getElementById("p1").innerHTML="login failed";
